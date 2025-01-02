@@ -1,14 +1,14 @@
 {
-  "name": "qasim",
+  "name": "islamic",
   "type": "module",
   "version": "1.0.0",
   "main": "muslim.js",
   "scripts": {
     "test": "node test.js"
   },
-  "author": "",
+  "author": "GlobalTechInfo",
   "license": "ISC",
-  "description": "",
+  "description": "Islamic API",
   "dependencies": {
     "node-fetch": "^3.3.2"
   }
