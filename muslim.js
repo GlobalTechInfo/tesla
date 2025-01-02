@@ -7,11 +7,29 @@ const creator = 'Qasim Ali ❤️';
 export async function NiatAshar(req, res) {
   try {
     const response = await fetch(encodeURI('https://raw.githubusercontent.com/GlobalTechInfo/Islamic-Database/main/data/NiatAshar.json'));
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch Niat Ashar data');
+    }
+
     const data = await response.json();
-    res.json({ result: data });
-  } catch (e) {
-    console.log('Error:', color(e, 'red'));
-    res.status(500).json({ error: 'Failed to fetch Niat Ashar data' });
+
+    res.json({
+      result: data,
+      creator: 'Qasim Ali ❤️',
+      status: true,
+      timestamp: new Date().toISOString(),
+      message: 'Request processed successfully'
+    });
+
+  } catch (error) {
+    console.error('Error:', error.message);
+    res.status(500).json({
+      status: false,
+      creator: 'Qasim Ali ❤️',
+      message: 'Failed to process the request',
+      error: error.message
+    });
   }
 }
 
