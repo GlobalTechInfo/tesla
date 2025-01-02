@@ -1,5 +1,6 @@
 {
   "name": "qasim",
+  "type": "module",
   "version": "1.0.0",
   "main": "muslim.js",
   "scripts": {
