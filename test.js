@@ -13,19 +13,19 @@ const Qasim = require('api-qasim');
     console.log('GitHub Clone Data:', gitcloneResponse);  // Log GitHub clone response
 
     // === Facebook Usage ===
-    const fbtext = "Facebook url";
+    const fbtext = "https://www.facebook.com/share/r/12DxYVDBCJA/";
     let fbResponse = await Qasim.fbdl(fbtext);
     let fbData = fbResponse.data;
     console.log('Facebook Data:', fbData);
 
     // === Instagram Usage ===
-    const instatext = "Instagram Url";
+    const instatext = "https://www.instagram.com/reel/DBNx1HCK33C/?igsh=MWs0eDFjcHE5eTM1aA==";
     let igResponse = await Qasim.igdl(instatext);
     let igData = igResponse.data;
     console.log('Instagram Data:', igData);
 
     // === Mediafire Dl ===
-    const mediafireUrl = "Mediafire Url";
+    const mediafireUrl = "https://www.mediafire.com/file/jdu6pvahngo353i/whatsapp+Beta+business+by+(+AsepOfc+)+2.24.22.5.apk/file";
     let mediafireResponse = await Qasim.mediafire(mediafireUrl);
     let mediafireData = mediafireResponse;
     console.log('MediaFire Data:', mediafireData);
