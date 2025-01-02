@@ -12,7 +12,7 @@ export async function NiatAshar(req, res) {
 
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -22,7 +22,7 @@ export async function NiatAshar(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -36,7 +36,7 @@ export async function NiatMaghrib(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -46,7 +46,7 @@ export async function NiatMaghrib(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -58,7 +58,7 @@ export async function NiatIsha(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -68,7 +68,7 @@ export async function NiatIsha(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -81,7 +81,7 @@ export async function NiatDzuhur(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -91,7 +91,7 @@ export async function NiatDzuhur(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -103,7 +103,7 @@ export async function NiatFajar(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -113,7 +113,7 @@ export async function NiatFajar(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -125,7 +125,7 @@ export async function AsmaulHusna(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -135,7 +135,7 @@ export async function AsmaulHusna(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -147,7 +147,7 @@ export async function StoryProphets(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -157,7 +157,7 @@ export async function StoryProphets(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -169,7 +169,7 @@ export async function NiatSalaht(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -179,7 +179,7 @@ export async function NiatSalaht(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -191,7 +191,7 @@ export async function BaccanSalaht(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -201,7 +201,7 @@ export async function BaccanSalaht(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -214,7 +214,7 @@ export async function DoaHarian(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -224,7 +224,7 @@ export async function DoaHarian(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -236,7 +236,7 @@ export async function AyatKursi(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -246,7 +246,7 @@ export async function AyatKursi(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -258,7 +258,7 @@ export async function Wirid(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -268,7 +268,7 @@ export async function Wirid(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -280,7 +280,7 @@ export async function Tahlil(req, res) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -290,7 +290,7 @@ export async function Tahlil(req, res) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -310,7 +310,7 @@ export async function Quran(req, res, next) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -320,7 +320,7 @@ export async function Quran(req, res, next) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
@@ -340,7 +340,7 @@ export async function Hadith(req, res, next) {
     const data = await response.json();
     res.json({
       result: data,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       status: true,
       timestamp: new Date().toISOString(),
       message: 'Request processed successfully'
@@ -350,7 +350,7 @@ export async function Hadith(req, res, next) {
     console.error('Error:', error.message);
     res.status(500).json({
       status: false,
-      creator: 'Qasim Ali ❤️',
+      creator: 'Qasim Ali 🦋',
       message: 'Failed to process the request',
       error: error.message
     });
