@@ -29,9 +29,8 @@ const Qasim = require('api-qasim');
     let mediafireResponse = await Qasim.mediafire(mediafireUrl);
     let mediafireData = mediafireResponse;
     console.log('MediaFire Data:', mediafireData);
-
-  } catch (error) {
-    console.error('Error:', error);  // Fixed the syntax error
+} catch (error) {
+    console.error('Error:', error);
   }
 }
 
