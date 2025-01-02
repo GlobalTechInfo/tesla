@@ -1,0 +1,15 @@
+{
+  "name": "qasim",
+  "version": "1.0.0",
+  "main": "tes.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "api-qasim": "^3.1.0"
+  }
+}
+
