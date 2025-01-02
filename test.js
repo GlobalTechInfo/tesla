@@ -1,8 +1,8 @@
 const Qasim = require('api-qasim');
 
 (async () => {
-
-     // === Google Image ===
+  try {
+    // === Google Image ===
     const searchQuery = "cat";  // Example search query
     let googleImageResponse = await Qasim.googleImage(searchQuery);  // Fetch image URLs for the search query
     console.log('Google Image Search Results:', googleImageResponse);  // Log image URLs
@@ -29,9 +29,7 @@ const Qasim = require('api-qasim');
     let mediafireResponse = await Qasim.mediafire(mediafireUrl);
     let mediafireData = mediafireResponse;
     console.log('MediaFire Data:', mediafireData);
-} catch (error) {
+  } catch (error) {
     console.error('Error:', error);
   }
-}
-
-();
+})();
