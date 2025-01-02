@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-
+const creator = 'Qasim Ali 🦋';
 export async function NiatAshar(req, res) {
   try {
     const response = await fetch(encodeURI('https://raw.githubusercontent.com/GlobalTechInfo/Islamic-Database/main/data/NiatAshar.json'));
