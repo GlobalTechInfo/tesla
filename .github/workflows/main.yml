@@ -14,7 +14,7 @@ jobs:
       attestations: write
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: globaltechinfo
+      IMAGE_NAME: globaltechinfo/tesla
 
     steps:
       - name: Checkout
