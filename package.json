@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "muslim.js",
   "scripts": {
-    "test": "node muslim.js"
+    "test": "node test.js"
   },
   "author": "",
   "license": "ISC",
