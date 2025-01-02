@@ -13,7 +13,7 @@ jobs:
       contents: read
       attestations: write
     env:
-      REGISTRY: index.docker.io
+      REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}
 
     steps:
