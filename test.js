@@ -1,35 +1,41 @@
-const Qasim = require('api-qasim');
-
-(async () => {
-  try {
-    // === Google Image ===
-    const searchQuery = "cat";  // Example search query
-    let googleImageResponse = await Qasim.googleImage(searchQuery);  // Fetch image URLs for the search query
-    console.log('Google Image Search Results:', googleImageResponse);  // Log image URLs
-
-    // === GitHub Clone ===
-    const gitUrl = "https://github.com/GlobalTechInfo/ULTRA-MD";  // Example GitHub URL
-    let gitcloneResponse = await Qasim.gitclone(gitUrl);  // Fetch GitHub clone data
-    console.log('GitHub Clone Data:', gitcloneResponse);  // Log GitHub clone response
-
-    // === Facebook Usage ===
-    const fbtext = "https://www.facebook.com/share/r/12DxYVDBCJA/";
-    let fbResponse = await Qasim.fbdl(fbtext);
-    let fbData = fbResponse.data;
-    console.log('Facebook Data:', fbData);
-
-    // === Instagram Usage ===
-    const instatext = "https://www.instagram.com/reel/DBNx1HCK33C/?igsh=MWs0eDFjcHE5eTM1aA==";
-    let igResponse = await Qasim.igdl(instatext);
-    let igData = igResponse.data;
-    console.log('Instagram Data:', igData);
-
-    // === Mediafire Dl ===
-    const mediafireUrl = "https://www.mediafire.com/file/jdu6pvahngo353i/whatsapp+Beta+business+by+(+AsepOfc+)+2.24.22.5.apk/file";
-    let mediafireResponse = await Qasim.mediafire(mediafireUrl);
-    let mediafireData = mediafireResponse;
-    console.log('MediaFire Data:', mediafireData);
-  } catch (error) {
-    console.error('Error:', error);
+import { NiatAshar, Quran, Hadith, Tahlil } from './muslim.js';
+// Mock the request and response objects
+const req = {
+  query: {
+    surah: '1',      // Surah number for Quran
+    ayat: '1',       // Ayat number for Quran
+    kitab: 'muslim', // Book name for Hadith
+    hadith: '792'    // Hadith number for Hadith
   }
-})();
+};
+
+const res = {
+  json: (data) => {
+    console.log('Response:', JSON.stringify(data, null, 2));  // Pretty-print the JSON response
+  },
+  status: (statusCode) => {
+    return {
+      json: (data) => {
+        console.error(`Error Response (status ${statusCode}):`, JSON.stringify(data, null, 2));
+      },
+    };
+  },
+};
+
+// Call all the functions to test them
+async function testFunctions() {
+  console.log('Testing NiatAshar function...');
+  await NiatAshar(req, res);  // Call NiatAshar function
+
+  console.log('Testing Quran function...');
+  await Quran(req, res);  // Call Quran function
+
+  console.log('Testing Hadith function...');
+  await Hadith(req, res);  // Call Hadith function
+
+  console.log('Testing Tahlil function...');
+  await Tahlil(req, res);  // Call Tahlil function
+}
+
+// Run the tests
+testFunctions();
