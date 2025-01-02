@@ -1,15 +1,15 @@
 {
   "name": "qasim",
   "version": "1.0.0",
-  "main": "tes.js",
+  "main": "muslim.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node muslim.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "api-qasim": "^3.2.0"
+    "node-fetch": "^3.3.2"
   }
 }
 
